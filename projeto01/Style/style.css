@@ -1,0 +1,45 @@
+* { 
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    font-family: 'Inter', sans-serif;
+}
+
+
+h1, h2  {
+  font-family: 'Prata', serif;
+}
+
+div {
+  display: inline;
+}
+
+nav > ul > table > p {
+  text-align: left;
+  margin-top: 20px;
+  font-family: 'Prata', serif;
+}
+
+nav > ul > table > a {
+  list-style-type: none;
+  text-decoration: none;
+  color: gray; 
+  padding: 6px;
+  margin-top: 20px;
+}
+
+#botao {
+  width: 120px;
+  height: 42px;
+  color: black;
+  background-color: yellow;
+  font-family: 'Prata', serif;
+  
+}

@@ -1,0 +1,119 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --cinza: #25252b;
+    --cinza-claro: #efefef;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+/*------HEADER----------------------------------------*/
+header {
+   background-color: var(--cinza) ;
+   text-align: center;
+   height: 8rem; /*Calcular o rem é basicamente 16PX (pixel) X  8*/
+}
+
+.pokemon-logo {
+    width: 250px;
+
+}
+/* ------FIM DO HEADER------------------------------------*/
+/*----CORPO-----------------------------------------------*/
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    padding: 0 2rem;
+    margin: auto;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*---FIM DO CORPO---------------------------------------------*/
+/*--POKEBOLA-------------------------------------------------*/
+.pokebola-img {
+    width: 250px;
+    cursor: pointer;
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% / 0.5)); /*Mesma coisa q box-shadow*/
+}
+
+.pokebola-img:active {
+    animation: shake 0.1s; /*duração da animação*/
+    animation-iteration-count:  200; /*quantas vezes irá ser executado o efeito (animação)*/
+}
+
+@keyframes shake { /*as % é como se fossem o tempo da animação, (shake, tremer)*/
+    0% {margin-left: 0;} /*Nos colchetes, se configura as margens para a animação */
+    25% {margin-left: 10px;}
+    50% {margin-left: 0px;}
+    75% {margin-left: -10px;}
+    100% {margin-left: 0;}
+}
+
+/*--FIM DA POKEBOLA------------------------------------------*/
+/*--POKEMON -------------------------------------------------*/
+.pokemon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /*para que quando a tela fique menor como de celulares, ele faça a quebra das imagens e as linhas*/
+    gap: 1rem; /*gap irá colocar entre os elementos  um espaçamento */
+
+    background: linear-gradient(45deg, #ffeb3b, #ff9800);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 500px;
+    max-width: 100%; /*para quando ficar em tela menor que 500px não estourar a imagem*/
+    filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% / 0.5));
+}
+
+/*--POKESTOP-------------------------------------------------*/
+    .pokestop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap; /*para que quando a tela fique menor como de celulares, ele faça a quebra das imagens e as linhas*/
+        padding: 2rem 0;
+        min-height: calc(100vh - 8rem -52px); /*Basicamente o calc é para ele calcular a viewport (tamanho de tela) de acordo com os paramêtros do header e do footer para que 
+        a imgem fique perfeita e centrelizada*/
+    }
+    .pokemon__wrapperImage {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-color:var(--cinza-claro) ;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .pokemon-img {
+        width: 100%;
+        filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% / 0.5));
+    }
+/*--FIM DO POKESTOP------------------------------------------*/
+/*--FOOTER---------------------------------------------------*/
+    footer {
+        background-color: var(--cinza);
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+        height: 52px;
+        
+    }
+/*--FIM DO FOOTER--------------------------------------------*/

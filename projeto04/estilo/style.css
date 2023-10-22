@@ -1,0 +1,172 @@
+:root {
+    --font-family1: 'Inter', sans-serif;
+    --fontfamily2: 'Prata', serif;
+    --fontfamily3: 'Chango', sans-serif;
+    --cinzaE: #131417;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+/*--Inicio header --------------------------------------------*/
+header {
+  background-color: var(--cinzaE);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+.pwow {
+   font-family: var(--fontfamily3);
+}
+
+/*--Fim header----------------------------------------------*/
+/*--Começo corpo---------------------------------------------*/
+body {
+    background-color: rgb(199, 199, 199);
+    text-align: center;
+}
+
+/*--Fim corpo-------------------------------------------------*/
+/*--inicio links e  p-----------------------------------------*/
+ a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; /*tira cor do link*/
+ }
+
+ p {
+    font-family: var(--font-family1);
+    text-align: center;
+    margin: auto;
+    text-wrap: wrap;
+    width: 800px;
+   
+ }
+
+ .inicio {
+    padding: 20px;
+    font-size: 30px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.404);
+    border-radius: 20px
+ }
+
+ h2 {
+    padding: 5px;
+    text-align: center;
+    margin: 6px;
+    font-size: 30px;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.404);
+ }
+
+
+/*--fim links e p -------------------------------------------------*/
+/*--Imagem drackthyr---------------------------------------------*/
+    .imagem-drackthyr {
+        width: 600px;
+        height: 300px;
+    }
+/*--Fim Imagem drackthry----------------------------------------*/
+/*--main-------------------------------------------------------*/
+
+    .tudo-main {
+        background-image: url(../img/dragonflight-inicial.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        margin: auto;
+        padding-bottom: 20px;
+        border-radius: 20px 20px  0px 0px;
+        background-color: rgba(56, 56, 56, 0.664);
+        color: white;
+        width: 1200px;
+        height: auto;
+    }
+
+    .paralax {
+        filter: drop-shadow(15px 15px 15px hsl(76deg 0% 0% / 0.5));
+        width: 800px;
+        height: 560px;
+        margin-top: 0px;
+        background-repeat: no-repeat;
+        margin: auto;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .flight {
+        cursor: pointer;
+    }
+
+/*-- TANKS ------------------------------------------------ */
+  
+.tudo-tank {
+    background-image: url(../img/neltha.jpg);
+    background-repeat: no-repeat;
+    image-rendering: optimizeSpeed;
+    background-size: cover;
+}
+
+.tank {
+        display: flex;
+        justify-content: center;
+        font-family: var(--fontfamily3);
+        align-items: center;
+        background-color: var(--cinzaE);
+        color: white;
+        font-size: 40px;
+        width: auto;
+        height: 200px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .tankp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        color: white;
+        font-size: normal;
+        margin: auto;
+        border-radius: 0px 00px  20px 20px;
+        background-color: rgba(56, 56, 56, 0.664);
+        color: white;
+        width: 1200px;
+        height: auto;
+    }
+
+    .classe-tank {
+        display: flex;
+        width: 800px;
+        padding: 13px;
+    }
+
+    .tier {
+        padding: 14px;
+    }
+
+/*--FIM DOS TANKS ------------------------------------------------ */
+/*--fim do main-------------------------------------------------*/
+/*--inicio footer-----------------------------------------------*/
+    .rodape {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--fontfamily2);
+        margin-top: 30px;
+        text-align: center;
+        background-color: var(--cinzaE);
+        color: white;
+        height: 100px;
+    }
+/*-- Fim do footer----------------------------------------------*/
