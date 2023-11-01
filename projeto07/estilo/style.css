@@ -98,13 +98,13 @@ main {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(../img/shadows.jpg);
+    background-image: url(../img/shadows1.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
     width: 100%;
-    height: 45  0px;
-    opacity: 0.8;
+    height: 45 0px;
+    opacity: 0.76;
     transform: scaleX(-1);
 }
 
@@ -115,7 +115,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .circ {
@@ -155,7 +155,7 @@ main {
     text-align: center;
     width: 60px;
     height: 60px;
-    
+
 }
 
 .rank-letra {
@@ -184,35 +184,102 @@ main {
     position: relative;
 }
 
+.sobre {
+    display: flex;
+    flex-direction: column;
 
-.nav ul li {
-    list-style: none;
-    position: relative;
-    
 }
 
+.sobre li {
+    list-style: none;
+    padding-bottom: 12px;
+    margin-right: 10px;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
-.nav ul li a {
+.sobre h1 {
+    padding-bottom: 7px;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    text-align: right;
+}
+
+ul li a {
     text-decoration: none;
     color: inherit;
     color: white;
     position: relative;
     padding-right: 10px;
+
 }
 
-.nav ul li a:hover {    
+ul li a:hover {
     transition-duration: 4s;
     transition-delay: 2s;
     transition: .8s;
     color: var(--azul-claro);
 }
 
-div.nav {
-    display: flex;
-}
-/*NAV*/
-h1, p {
+h1 ,p {
     position: relative;
 }
 
 
+
+.entrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 6px;
+}
+
+.sign-up {
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    height: 30px;
+    width: 70px;
+    color: white;
+    font-size: 16px;
+    border-color: transparent;
+}
+
+.sign-up:hover {
+    color: var(--azul-claro);
+    transition-duration: 0.4s;
+}
+
+
+#procurar {
+    background-color: rgba(0, 0, 0, 0.452);
+    border-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+    padding: 4px;
+}
+
+.input-wrapper {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.input-wrapper i {
+    color: white;
+    font-size: 15px;
+}
+
+.input-wrapper i:hover {
+    color: var(--azul-claro);
+    transition-duration: 0.4s;
+}
+/*NAV*/
+
+/*INFO*/
+
+/*INFO*/
