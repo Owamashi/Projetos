@@ -1,5 +1,6 @@
 :root {
     --font-familia: 'Prata', serif;;
+    --font-familiap: 'Inconsolata', monospace;
     
 } 
 * {
@@ -13,6 +14,13 @@ body {
     padding: 20px;
     font-family: var(--font-familia);
     font-size: 14.3px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+
 }
 
 .container {
@@ -38,11 +46,12 @@ body {
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.233);
-    width: 390px;
-    height: 400px;
+    background-color: rgba(0, 0, 0, 0.308);
+    width: 368px;
+    height: 380px;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: inset 3px -70px 66px rgba(0, 0, 0, 0.438);
 }
 
 .fundo2 {
@@ -50,7 +59,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 30px;
-    width: 950px;
+    width: auto;
     height:450px;
     position: relative;
     padding: 18px;
@@ -67,7 +76,7 @@ body {
     border-radius: 30px;
     width: 100%;
     height: auto;
-    opacity: 0.76;
+    opacity: 0.80;
     transform: scaleX(-1);
 }
 
@@ -75,62 +84,113 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
     width: 300px;
     font-weight: bold;
     font-style: italic;
     padding-bottom: 6px;
 }
 
+.img-s {
+    width: 50px;
+    height: 50px;
+}
+
 .texto-p1 {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
-    text-align: center;
-    justify-content: center;
+    width: 270px;
+    color: rgb(0, 0, 0);
 }
 
+.informacao {
+    position: relative;
+    display: flex;
+    text-align: right;
+    color: white;
+    padding-top: 80px;
+}
 
+.informacao ul li {
+    padding: 3.3px;
+    list-style-type: none;
+}
+.informacao ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-familiap);
+    cursor: pointer;
+}
 
+.informacao ul li a:hover {
+    color: rgb(102, 185, 240);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+.informacao h2 {
+    display: flex;
+    justify-content: right;
+}
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px ;
+    padding-bottom: 30px;
 }
 
 nav .logo {
     position: relative;
-    font-size: 30px;
+    font-size: 32px;
     font-style: italic;
     font-weight: bold;
-    color: white;
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+    
 }
+
+nav .logo a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
 
 nav ul li {
     display: inline-block;
+    padding-left: 18px;
+    list-style: none;
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    position: relative;
     font-size: 17px;
+    text-decoration: none;
+    color: white;
 }
 nav ul li a:hover {
     color: rgb(102, 185, 240);
     transition: 0.6s;
+    text-decoration: underline;
 }
 
-ul li {
-    list-style: none;
-    position: relative;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-ul li  a {
+footer a {
     text-decoration: none;
-    position: relative;
-    color: inherit;
-    padding: 20px;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: rgb(104, 39, 165);
+    transition: 0.4s;
+    cursor: pointer;
 }
